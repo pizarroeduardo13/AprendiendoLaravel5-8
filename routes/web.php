@@ -1,5 +1,5 @@
 <?php
-use Illuminate\Support\Facades\Route;
+//use Illuminate\Support\Facades\Route;
 //use Symfony\Component\Routing\Route;
 
 /*
@@ -28,3 +28,9 @@ Route::get('/', function () {
 //Route::get('pruebaruta', 'PruebaRutaController@index');
 
 Route::get('/','InicioController@index');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function(){
+Route::get('permiso', 'PermisoController@index')->name('permiso');
+Route::get('menu', 'MenuController@index')->name('menu');
+Route::get('menu/crear', 'MenuController@crear')->name('crear_menu');
+Route::post('menu', 'MenuController@guardar')->name('guardar_menu');
+});
