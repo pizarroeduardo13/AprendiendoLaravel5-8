@@ -63,7 +63,12 @@
 <script src="{{asset("assets/$theme/bower_components/fastclick/lib/fastclick.js")}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset("assets/$theme/dist/js/adminlte.min.js")}}"></script>
-<!-- AdminLTE for demo purposes -->
+<!-- El jquery validate -->
+<script src="{{asset("assets/js/jquery-validation/dist/jquery.validate.min.js")}}"></script>
+<!-- El jquery validate para los mensajes en espanol -->
+<script src="{{asset("assets/js/jquery-validation/dist/localization/messages_es.min.js")}}"></script>
+<!-- Un archivo de funciones que yo cree -->
+<script src="{{asset("assets/js/funciones.js")}}"></script>
 
 @yield("scripts")
 
